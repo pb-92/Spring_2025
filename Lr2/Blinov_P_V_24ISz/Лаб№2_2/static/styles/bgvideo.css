@@ -1,0 +1,27 @@
+.bgvideo {
+    position: relative; /* Создаем контекст позиционирования */
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.bgvideo video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0; /* Видео находится внизу */
+}
+
+.video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Текст находится сверху */
+    color: white; /* Цвет текста для лучшей видимости на видео */
+    text-align: center;
+    font-size: 48px; /* Размер текста по вашему желанию */
+}
